@@ -3,7 +3,9 @@
 class User extends MY_Controller{
 
 	public function index(){
-		echo "pubic index";
+
+		$this->load->helper('html');
+		$this->load->view('public/articles_list');
 	}
 
 }
